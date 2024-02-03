@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      #login-form {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 300px;
+      }
+
+      #login-form h2 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      #login-form input[type="text"],
+      #login-form input[type="password"] {
+        width: calc(100% - 20px);
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        box-sizing: border-box;
+      }
+
+      #login-form input[type="submit"] {
+        width: 100%;
+        background-color: #4caf50;
+        color: #fff;
+        padding: 10px;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      #login-form input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+      button {
+        background-color: #008cba; /* Blue background color */
+        color: white; /* White text color */
+        padding: 10px 20px; /* Padding for the button */
+        border: none; /* No border */
+        border-radius: 5px; /* Rounded corners */
+        cursor: pointer; /* Cursor style on hover */
+        transition: background-color 0.3s ease; /* Smooth transition */
+      }
+
+      button:hover {
+        background-color: #005f7f; /* Darker blue on hover */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="login-form">
+      <h2>Register Now</h2>
+      <form method="post">
+        <input type="text" name="name" placeholder="name" required /><br />
+        <input type="text" name="email" placeholder="email" required /><br />
+        <input
+          type="password"
+          name="password"
+          placeholder="password"
+          required
+        /><br />
+        <button type="submit">Sign Up</button>
+      </form>
+    </div>
+  </body>
+</html>
